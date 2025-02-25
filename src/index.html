@@ -6,13 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Chicken Soba is a delicious and comforting Japanese dish that combines tender chicken with chewy buckwheat" />
 	<title>CHICKEN SOBA</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<p>Japanese cuisine</p> <!-- This is not the main headline. I want this tertiary headline to appear above the main title but in a smaller size.-->
-	<h1>CHICKEN SOBA</h1>
-	<p> 50min | difficult | 2servings </p>
-	<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_1200/hellofresh_s3/image/chicken-and-soba-noodle-salad-16a0a218.jpg" alt="chicken soba" width = "300" height="200">
-		<p>Chicken Soba is a delicious and comforting Japanese dish that combines 
+
+<body class = "landing-page-background">
+	<p class="food-category">Japanese cuisine</p> <!-- This is not the main headline. I want this tertiary headline to appear above the main title but in a smaller size.-->
+	<h1 class="main-title">CHICKEN SOBA</h1>
+	<p class="recipe-details"> 50min | difficult | 2servings </p>
+	<img class="dish-image" src="images/dish-image.png"/>
+		<p class="recipe-description">Chicken Soba | is a delicious and comforting Japanese dish that combines 
 		tender chicken with chewy buckwheat noodles in a flavorful broth. 
 		This dish perfectly balances savory, umami-rich flavors with fresh toppings 
 		like green onions, mushrooms, or a soft-boiled egg. 
@@ -20,13 +22,16 @@
 		a dipping sauce, Chicken Soba is a versatile meal loved for its simplicity 
 		and depth of taste. 
 		</p> <!-- this additional paragraph was generted with Chat GPT-->
-		<h2> INGREDIENTS</h2>
-		<p>serving size</p>
-		<button> - </button>
-		<button> + </button>
-		<p> 2 </p> <!-- increasing and decreasing numbers depending on button input-->
-		
-		<div> <!-- I will use div to put the list of indredients and their amount side by side in css-->
+		<h2 class="ingredients-title"> INGREDIENTS</h2>
+		<p class="serving-size-label">serving size</p>
+
+		<div class="serving-size-button">
+		<button class="button-decrement"> - </button>
+		<p class="serving-size-value"> 2 </p> <!-- increasing and decreasing numbers depending on button input-->
+		<button class="button-increment"> + </button>
+		</div>
+
+		<div class="ingredients_list"> <!-- I will use div to put the list of indredients and their amount side by side in css-->
 			<ul>
 				<li>Buckwheat noodles</li>
 				<li>Chicken fillet</li>
@@ -38,9 +43,7 @@
 				<li>Sesame seeds</li>
 				<li>Caper</li>
 			</ul>
-		</div>
-
-		<div>
+		
 			<ul> <!-- I will figure out how to make increasing and decreasing numbers depending on serving size. JavaScript?-->
 				<li>200</li>
 				<li>150</li>
@@ -53,9 +56,7 @@
 				<li>1</li>
 				<li>25</li>
 			</ul>
-		</div>
-
-		<div>
+	
 			<ul>
 				<li>g</li>
 				<li>g</li>
@@ -70,8 +71,57 @@
 			</ul>
 		</div>
 
-		<h3>PREPARATION</h3>
-		<ol>
+		<h3 class="preparation-title">PREPARATION</h3>
+		
+		<ol class="preparation-steps">
+			<li class="prep-item">
+			  <p class="recipe-instruction">
+				Smoke chicken fillets in thin strips, add soy sauce (to cover the meat). It's good to mix with caper and marinate for 30 minutes.
+			  </p>
+			  <p class="video-section">
+				<video controls width="320">
+				  <source src="https://eda.ru/video/ptica-/kak-podgotovit-kurinoe-file-56" type="video/mp4">
+				  Your browser does not support the video tag.
+				</video>
+			  </p>
+			</li>
+			<li class="prep-item">
+			  <p class="recipe-instruction">
+				Fry thick strips of carrots and onions.
+			  </p>
+			  <p class="video-section">
+				<video controls width="320">
+				  <source src="https://eda.ru/video/ovoschi/kak-obrabotat-sladkij-perec-18" type="video/mp4">
+				  Your browser does not support the video tag.
+				</video>
+			  </p>
+			</li>
+			<li class="prep-item">
+			  <p class="recipe-instruction">
+				5-6 minutes in boiling water prepare soba noodles.
+			  </p>
+			  <p class="video-section">
+				<img src="https://cdn-icons-png.freepik.com/256/9776/9776918.png?semt=ais_hybrid" alt="Icon representing a cooking step">
+			  </p>
+			</li>
+			<li class="prep-item">
+			  <p class="recipe-instruction">
+				Roast the chicken on a small amount of oil. When it is almost ready, add vegetables, several spoons of water and bring to full readiness.
+			  </p>
+			  <p class="video-section">
+				<img src="https://cdn-icons-png.freepik.com/256/9776/9776918.png?semt=ais_hybrid" alt="Icon representing a cooking step">
+			  </p>
+			</li>
+			<li class="prep-item">
+			  <p class="recipe-instruction">
+				Mix with noodles. You can serve hot or cold.
+			  </p>
+			  <!-- No video for this step -->
+			</li>
+		  </ol>
+
+<!-- 
+		<ol class="preparation-steps">
 			<li>Smoke chicken fillets in thin strips, add soy sauce (to cover the meat). 
 				It's good to mix with caper and leave to marinated for 30 minutes. 
 				<a href="https://eda.ru/video/ptica-/kak-podgotovit-kurinoe-file-56">How to prepare chicken fillets...</a>
@@ -91,8 +141,8 @@
 						</li>
 							<li>Mix with noodles.  You can serve hot or cold.</li>
 						</ol>
-
-						<footer>
+-->
+						<footer class="footer-info">
 							<p>
 								Working hours  9:00 – 21:00
 								Moscow region, Lenin district, village. Bulatnikovo,
@@ -100,7 +150,7 @@
 								Moscow, st. Krzhizhanovskogo, 17, building 1
 								+7 495 150-38-98
 								WhatsApp +7 (915) 021-33-05
-							</p>
+							</p> 
 						</footer>
 						
 					</body>

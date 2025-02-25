@@ -9,3 +9,185 @@
 		color: red;
 	}
 }
+
+.landing-page-background {
+    width: 1280px; 
+    height: 1450px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/background-imageg.png");
+  }
+
+.food-category{
+    width: 250px; 
+    height: 45px; 
+    border-radius: 12px;
+    justify-content: center; 
+    display: inline-flex;
+	color: black;
+    font-family: "Comic Sans MS", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+    background-color: #cfcfcf; 
+}
+
+.main-title{
+    color: #F2F2F2;
+    font-size: 80px;
+    font-family: Comic Sans MS, sans-serif;
+    font-weight: 700;	
+}
+
+
+.recipe-details{
+    width: 450px; 
+    justify-content: center; 
+    display: inline-flex;
+    color: #D9D9D9;
+    font-size: 24px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+.dish-image{
+    width: 940px; 
+    height: 526px;
+}
+
+.recipe-description{
+    width: 940px;
+    justify-content: center; 
+    display: inline-flex;    
+    color: white;
+    font-size: 30px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.ingredients-title{
+    color: white;
+    font-size: 55px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+    word-wrap: break-word;
+
+}
+
+.serving-size-label{
+    word-wrap: break-word;
+    color: white;
+    font-size: 30px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.serving-size-button{
+    display:flex;
+    flex-direction: row;
+    gap:40px;
+}
+
+
+.button-decrement{
+    width: 80px; 
+    height: 80px; 
+    border-radius:40px;
+    justify-content:space-around; 
+    display: inline-flex;
+    color: black;
+    font-size: 50px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+}
+
+.button-increment{
+    width: 80px; 
+    height: 80px; 
+    border-radius:40px;
+    justify-content:space-around; 
+    display: inline-flex;
+    color: black;
+    font-size: 50px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+}
+
+.serving-size-value{
+    color: white;
+    font-size: 40px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.ingredients_list{
+    display:flex;
+    flex-direction: row;
+    gap: 150px;
+    width: 940px; 
+    color: white;
+    font-size: 30px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+}
+
+
+.preparation-title{
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+.preparation-steps {
+    width:940px;
+    color: white;
+    font-size: 30px;
+    font-family: Comic Sans MS;
+    font-weight: 400;
+  }
+  
+  .prep-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .recipe-instruction {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+
+
+
+  .footer-info{
+	width: 1600px; 
+	height: 537px; 
+    justify-content: center; 
+	background: #BCB9B9; 
+	justify-content: center; 
+	align-items: center; 
+	color: #1d1d1d; 
+	font-size: 20px; 
+	font-family: Comic Sans MS; 
+	font-style: italic; 
+	font-weight: 400; 
+	word-wrap: break-word;
+}
