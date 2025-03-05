@@ -1,193 +1,472 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
-	}
-}
-
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
-	}
-}
-
-.landing-page-background {
-    width: 1280px; 
-    height: 1450px; 
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../images/background-imageg.png");
-  }
+    background-image: url(../images/background-imageg.png);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background: rgba(129, 129, 129, 0.672);
+}
+
+.language-select {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 .food-category{
-    width: 250px; 
-    height: 45px; 
     border-radius: 12px;
-    justify-content: center; 
+    justify-content: center;
     display: inline-flex;
-	color: black;
-    font-family: "Comic Sans MS", sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-    background-color: #cfcfcf; 
+    color: black;
+    background-color: #cfcfcf;
 }
 
-.main-title{
+h1 {
     color: #F2F2F2;
-    font-size: 80px;
-    font-family: Comic Sans MS, sans-serif;
-    font-weight: 700;	
 }
-
 
 .recipe-details{
-    width: 450px; 
-    justify-content: center; 
+    justify-content: center;
     display: inline-flex;
     color: #D9D9D9;
-    font-size: 24px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-
-.dish-image{
-    width: 940px; 
-    height: 526px;
 }
 
 .recipe-description{
-    width: 940px;
-    justify-content: center; 
-    display: inline-flex;    
+    line-height: 1.5;
     color: white;
-    font-size: 30px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
-    word-wrap: break-word;
 }
 
-.ingredients-title{
+h2 {
     color: white;
-    font-size: 55px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
-    word-wrap: break-word;
-
 }
 
 .serving-size-label{
-    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 0px;
     color: white;
-    font-size: 30px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
-    word-wrap: break-word;
 }
 
 .serving-size-button{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    gap:40px;
 }
 
-
-.button-decrement{
-    width: 80px; 
-    height: 80px; 
-    border-radius:40px;
-    justify-content:space-around; 
+.button-decrement, .button-increment {
+    justify-content: space-around;
     display: inline-flex;
+    align-items:center; 
     color: black;
-    font-size: 50px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
-}
-
-.button-increment{
-    width: 80px; 
-    height: 80px; 
-    border-radius:40px;
-    justify-content:space-around; 
-    display: inline-flex;
-    color: black;
-    font-size: 50px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
 }
 
 .serving-size-value{
+    margin-top: 10px;
+    margin-bottom: 0px;
     color: white;
-    font-size: 40px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
-    word-wrap: break-word;
 }
 
 .ingredients_list{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    gap: 150px;
-    width: 940px; 
     color: white;
-    font-size: 30px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
 }
 
-
-.preparation-title{
-    text-align: center;
-    color: white;
-    font-size: 55px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
-    word-wrap: break-word;
+.ingredients_list ul {
+    list-style: none;
 }
 
-
-.preparation-steps {
-    width:940px;
+h3 {
     color: white;
-    font-size: 30px;
-    font-family: Comic Sans MS;
-    font-weight: 400;
-  }
-  
-  .prep-item {
+}
+
+.prep-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .recipe-instruction {
+    line-height: 1.5;
+    color: white;
+}
+
+.recipe-instruction-column {
+    flex: 1; 
+}
+
+.visuals-column {
     flex: 1;
-    margin-right: 10px;
-  }
+}
+
+.visuals-column img {
+    border-radius: 5px;
+}
+
+.visuals-column iframe {
+    border-radius: 5px;
+}   
+
+.footer-info{
+    margin-top:40px;
+    width:100%;
+    background: #BCB9B9; 
+    color: #1d1d1d; 
+    font-size: 16px; 
+    font-style: italic; 
+} 
+
+.footer-info ul{
+    list-style:none;
+}
+
+
+@media screen and (max-width: 430px) {
+    
+
+    .logo {
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .hamburger{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #ffff;
+    }
+
+
+    .profile-icon {
+        margin-top: 10px;
+        margin-left: 190px;
+        margin-bottom: 10px;
+        height: 30px;
+    }
+    
+    .language-select {
+        font-size: 12px;
+        margin-right:30px;
+    }
+ 
+    .food-category{
+        width: 35%;
+        margin-top: 120px;
+        font-size: 13px;
+    }
+    
+    h1 {
+        margin-top:0px;
+        margin-bottom:0px;
+        font-size: 34px;
+    }
+    
+    .recipe-details{
+        font-size: 13px;
+    }
+    
+    
+    .dish-image{
+        width: 80%; 
+    }
+    
+    .recipe-description{
+        font-size: 13px;
+        width:70%
+    }
+    
+    h2 {
+        margin-top: 80px;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+    
+    .serving-size-label{
+        font-size: 13px;
+    }
+    
+    .serving-size-button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+    
+    
+    .button-decrement,
+    .button-increment {
+        font-size: 25px;
+    }
+    
+    
+    .serving-size-value{
+        font-size: 25px;
+    }
+    
+    .ingredients_list{
+        font-size: 13px;
+        gap:5px;
+        margin-right:30px;
+    }
+    
+    
+    h3 {
+        margin-top: 70px;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+    
   
-  .video-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-  }
-  
+    
+.prep-item {
+font-size:13px;
+    width:85%;
+    margin-left:10px;
+}
 
 
+.visuals-column img {
+    border-radius: 5px;
+    width:110%;
+}
 
-  .footer-info{
-	width: 1600px; 
-	height: 537px; 
-    justify-content: center; 
-	background: #BCB9B9; 
-	justify-content: center; 
-	align-items: center; 
-	color: #1d1d1d; 
-	font-size: 20px; 
-	font-family: Comic Sans MS; 
-	font-style: italic; 
-	font-weight: 400; 
-	word-wrap: break-word;
+.visuals-column iframe {
+    border-radius: 5px;
+    width:100%;
+}   
+
+    .footer-info{
+        font-size: 12px; 
+    } 
+
+}
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .logo {
+        height: 50px;
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    .profile-icon {
+        margin-top: 10px;
+        margin-left: 600px;
+        margin-bottom: 10px;
+        height: 30px;
+    }
+
+    .language-select {
+        font-size: 16px;
+        margin-right:30px;
+    }
+ 
+    .food-category{
+        width: 30%;
+        margin-top: 140px;
+        font-size: 20px;
+    }
+
+    h1 {
+        margin-top:10px;
+        margin-bottom:0px;
+        font-size: 70px;
+    }
+    
+    .recipe-details{
+        font-size: 20px;
+    }
+    
+    .dish-image{
+        width: 80%; 
+    }
+    
+    .recipe-description{
+        font-size: 20px;
+        width:75%;
+    }
+    
+    h2 {
+        margin-top: 60px;
+        margin-bottom: 0px;
+        font-size: 30px;
+    }
+    
+    .serving-size-label{
+        font-size: 20px;
+    }
+    
+    .serving-size-button{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        gap: 20px;
+    }
+    
+    .button-decrement,.button-increment {
+        font-size: 25px;
+    }
+    
+    .serving-size-value{
+        font-size: 30px;
+    }
+    
+    .ingredients_list{
+        font-size: 20px;
+        gap: 120px;
+        margin-right:70px;
+    }
+    
+    h3 {
+        margin-top: 70px;
+        margin-bottom: 0px;
+        font-size: 30px;
+    }
+    
+    .preparation-steps{
+width:90%;
+    }
+
+    .prep-item {
+        font-size: 20px;
+        gap:30px;
+        margin-left:50px;
+    }
+    
+    .visuals-column img {
+        border-radius: 5px;
+        width:80%;
+    }
+
+    .visuals-column iframe {
+        border-radius: 5px;
+        width:70%;
+    }  
+
+    .footer-info{
+        font-size: 16px; 
+    } 
+}
+
+
+@media screen and (min-width:1025px) {
+
+    .logo {
+        height: 70px;
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .profile-icon {
+        margin-left: 1150px;
+        height: 50px;
+    }
+    
+    .language-select {
+        font-size: 16px;
+        margin-right: 40px;
+    }
+ 
+    .food-category{
+        width: 20%;
+        margin-top: 150px;
+        font-size: 30px;
+    }
+    
+    h1 {
+        margin-top:0px;
+        margin-bottom:0px;
+        font-size: 100px;
+    }
+    
+    .recipe-details{
+        font-size: 30px;
+    }
+    
+    .dish-image{
+        width: 65%; 
+    }
+    
+    .recipe-description{
+        width:70%;
+        font-size: 30px;
+    }
+    
+    h2 {
+        margin-top: 70px;
+        margin-bottom: 0px;
+        font-size: 50px;
+    }
+    
+    .serving-size-label{
+        font-size: 30px;
+    }
+    
+    .serving-size-button{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        gap: 25px;
+    }
+    
+    .button-decrement,
+    .button-increment {
+        font-size: 30px;
+    }
+    
+    .serving-size-value{
+        font-size: 35px;
+    }
+    
+    .ingredients_list{
+        margin-right: 110px;
+        font-size: 30px;
+        gap: 210px;
+    }
+    
+    .ingredients_list ul {
+    list-style: none;
+    }
+    
+    h3 {
+        margin-top: 70px;
+        margin-bottom: 0px;
+        font-size: 45px;
+    }
+    
+    .preparation-steps{
+        width:80%;
+        margin: 40px;
+        padding: 0px;   
+    }
+
+    .prep-item {
+        margin-left: 80px;
+        gap: 70px;
+        font-size: 30px;
+    }
+
+    .visuals-column img {
+        border-radius: 5px;
+        width:90%;
+    }
+
+    .visuals-column iframe {
+        border-radius: 5px;
+        width:70%;
+    }  
+    
+    .footer-info{
+        font-size: 16px; 
+    } 
+
 }
